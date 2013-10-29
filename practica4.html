@@ -1,0 +1,41 @@
+<html>
+ 
+<head>
+<META charset=utf-8>
+<title>"Practica 4"</title>
+ </head>
+ <body>
+<?php
+$paises=array();
+$paises["MEXICO"]=array("GUADALAJARA","MONTERREY","TOLUCA","AGUSCALIENTES","LEON");
+$paises["ESPAÑA"]=array ("MADRID","BARCELONA","VALENCIA","SEVILLA","ZARAGOZA");
+$paises["JAPON"]=array ("TOKIO","OSAKA","HIROSHIMA","OKINAWA","NAGASAKI");
+$paises["EUA"]=array ("COLORADO","TEXAS","CALIFORNIA","NEW YORK","VEGAS");
+$paises["ARGENTINA"]=array ("BUENOS AIRES","CORDOBA","MAR DE PLATA","LA PLATA","SANTA FE");
+$paises["GRECIA"]=array ("ANDROS","CORINTO","CORFU","ESPARTA","ATENAS");
+$paises["BRASIL"]=array ("BRASILIA","SAO PAULO","BAHIA","RIO DE JANEIRO","RIO GRANDE");
+$paises["INGLATERRA"]=array ("MANCHESTER","BIRMINHAM","LONDRES","LIVERPOOL","BLACKPOOL");
+$paises["AUSTRALIA"]=array ("ADELAIDA","ALBURY","DARWIN","NEWCASTLE","SYDNEY");
+$paises["ALEMANIA"]=array ("STUTTGART","MUNICH","BERLIN","HANOVER","MAGUNCIA");
+
+echo "<ul>";
+foreach($paises as $pais=> $ciudades){
+echo "<li>".$pais."<ul>";
+echo "<br>";
+foreach ($ciudades as $ciudad){
+
+echo "<li>".$ciudad."</li>";
+echo "<br>";
+
+}
+echo "</ul></li>";
+echo "<br>";
+}
+echo"</ul>";
+echo "<br>";
+
+
+?>
+</body>
+
+</html>
